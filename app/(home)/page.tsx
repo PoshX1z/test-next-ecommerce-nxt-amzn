@@ -1,7 +1,10 @@
+import HomeCarousel from "@/components/shared/home/HomeCarousel";
+import data from "@/lib/data";
+
 export default function Home() {
   return (
     <div>
-      <h1 className="h1-bold text-center p-10">Home Page Content</h1>
+      <HomeCarousel items={data.carousels} />
     </div>
   );
 }
