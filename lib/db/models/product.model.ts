@@ -93,7 +93,7 @@ const productSchema = new Schema<IProduct>(
   }
 );
 
-//Product now is the actual use in other codes (what's add: ensuring there's no duplicate model)
+//Product is now the actual product data that use in other codes (what's add: ensuring there's no duplicate model)
 const Product =
   (models.Product as Model<IProduct>) ||
   model<IProduct>("Product", productSchema);
